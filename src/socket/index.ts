@@ -16,7 +16,7 @@ export function initSocket(server: HttpServer) {
   })
 
   // 🔐 Auth middleware
-  io.use(socketAuthMiddleware)
+  // io.use(socketAuthMiddleware)
 
   io.on('connection', (socket: Socket) => {
     console.log(`🟢 Client connected: ${socket.id}`)

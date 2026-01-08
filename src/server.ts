@@ -184,7 +184,7 @@ const server = http.createServer(app)
 // 🔌 Inicializamos socket.io
 initSocket(server)
 
-const PORT = process.env.PORT || 3333
+const PORT = process.env.PORT || 3330
 
 server.listen(PORT, () => {
   console.clear()
